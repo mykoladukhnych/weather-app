@@ -1,0 +1,34 @@
+.card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid var(--gray-color);
+    background-color: var(--gray-color);
+    transition: all 0.1s linear;
+    cursor: pointer;
+}
+
+.card:hover {
+    border: 1px solid var(--blue-color);
+}
+
+.active {
+    background-color: transparent;
+    border: 1px solid var(--blue-color);
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cityName, .right {
+    font-size: 18px;
+    font-weight: 700;
+}

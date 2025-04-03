@@ -1,0 +1,30 @@
+.form {
+    padding: 20px;
+}
+
+.formBtns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.span {
+    cursor: pointer;
+    position: relative;
+}
+
+.span::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background-color: #fff;
+    left: 0;
+    bottom: -5px;
+    transition: width .1s linear;
+}
+
+.span:hover::after {
+    width: 100%;
+}

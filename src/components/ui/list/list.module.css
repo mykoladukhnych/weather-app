@@ -1,0 +1,42 @@
+.list {
+    display: flex;
+}
+
+.listItem {
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.listItemRow {
+    flex-direction: row;
+}
+
+.listItemColumn {
+    flex-direction: column;
+}
+
+.listItemRow:not(:first-child) {
+    border-top: 1px solid var(--gray-color);
+}
+
+.listItemColumn:not(:first-child) {
+    border-left: 1px solid var(--gray-color);
+}
+
+.startElement, .middleElement, .endElement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.horizontal {
+    flex-direction: row;
+}
+
+.vertical {
+    flex-direction: column;
+}

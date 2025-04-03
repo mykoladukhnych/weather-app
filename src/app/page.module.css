@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+    height: 100%;
+}
+
+.left, .right {
+    width: 50%;
+}
+
+.imageContainer {
+    background-color: var(--gray-color);
+    border-radius: 20px;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 850px ) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+
+    }
+    .left {
+        /* display: none; */
+        width: 150px;
+        height: 150px;
+    }
+    .right {
+        width: 100%;
+    }
+}
